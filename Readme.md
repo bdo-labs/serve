@@ -17,6 +17,26 @@ Example
       index.js
 
 
+Bootstrap
+---------
+
+In your `package.json` you'll need `serve` as a dependency and run it from
+the root of your project.
+```json
+{
+    "scripts": {
+        "start": "serve"
+    },
+    "devDependencies": {
+        "serve": "bdo-labs/serve"
+    }
+}
+```
+
+At this point, running `npm start` should open your default browser with
+your component.
+
+
 License
 -------
 
