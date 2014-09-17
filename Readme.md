@@ -2,9 +2,7 @@
 Serve
 =====
 
-Serve takes care of building, serving and reloading a static site. Atm it
-will only transform css using [myth](//myth.io), but we might add support
-for additional plug-ins through middle-ware in the future.
+Serve takes care of building, serving and reloading a static site.
 
 
 Installation
@@ -13,10 +11,20 @@ Installation
     $ npm install -g serve@bdo-labs/serve
 
 
-Usage
------
+Usage: serve [options]
+----------------------
 
-    $ serve -h
+    Options:
+
+      -h, --help      output usage information
+      -V, --version   output the version number
+      --css [path]    path to CSS entry-file [lib/index.css]
+      --html [path]   path to html entry-file [lib/index.html]
+      --js [path]     path to JavaScript entry-file [lib/index.js]
+      --use [plugin]  duo middle-ware to be used
+      --out [path]    path to compiled output [build]
+      --port [n]      port to serve component to [3000]
+      --xip           use xip.io domain routing
 
 
 License
