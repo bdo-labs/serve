@@ -2,39 +2,21 @@
 Serve
 =====
 
-`serve` expects a certain structure in order to work properly. It assumes
-there's a `lib`-directory with index-files for each front-end technology.
-It will then build to the `build`-directory and serve `index.html` as a
-fall-back if no other resource matches the URI.
+Serve takes care of building, serving and reloading a static site. Atm it
+will only transform css using [myth](//myth.io), but we might add support
+for additional plug-ins through middle-ware in the future.
 
 
-Example
--------
+Installation
+------------
 
-    lib/
-      index.css
-      index.html
-      index.js
+    $ npm install -g serve@bdo-labs/serve
 
 
-Bootstrap
----------
+Usage
+-----
 
-In your `package.json` you'll need `serve` as a dependency and run it from
-the root of your project.
-```json
-{
-    "scripts": {
-        "start": "serve"
-    },
-    "devDependencies": {
-        "serve": "bdo-labs/serve"
-    }
-}
-```
-
-At this point, running `npm start` should open your default browser with
-your component.
+    $ serve -h
 
 
 License

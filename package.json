@@ -1,6 +1,6 @@
 {
   "name": "serve",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Serving and watching for bdo-components",
   "author": "Henrik Kjelsberg <henrik.kjelbserg@bdo.no>",
   "main": "lib/serve.js",
